@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  line-height: 1.6;
+}
+.subtitle {
+  color: black;
+}
+.text {
+  color: black;
+}
+.header {
+  width: 100%;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  /* border: 1px solid red; */
+  float: right;
+  margin-right: 10%;
+}
+.logo-link img {
+  display: inline-block;
+  width: 205px;
+  height: 70px;
+  /* border: 1px solid red; */
+  margin-left: 135px;
+  margin-top: 7px;
+}
+.nav-item {
+  display: inline-block;
+  margin: 0px 10px;
+}
+.nav-item a {
+  text-decoration: none;
+}
+.nav-list {
+  display: flex;
+  margin: 2em;
+  color: palevioletred;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-between;
+  list-style: none;
+}
+a:focus,
+a:hover {
+  color: brown;
+}
+
+h1,
+h2,
+strong {
+  font-weight: 700;
+}
+
+.accent-color {
+  color: gray;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 0;
+  color: black;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  color: #000;
+  margin-top: 1.25em;
+}
+
+/* buttons */
+
+.btn {
+  padding: 0.5em 1.75em;
+  font-weight: 700;
+  margin-top: 0.5em;
+  text-decoration: none;
+  background-color: orangered;
+}
+
+.btn-primary {
+  background: skyblue;
+  color: #000;
+  justify-self: center;
+}
+
+/* ==================
+    general layout
+===================== */
+
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+@media (min-width: 600px) {
+  .main-grid {
+    grid-template-columns: minmax(1em, 1fr) minmax(1em, 1fr);
+  }
+}
+
+.innovation {
+  padding: 4em 0;
+  text-align: center;
+  height: 10px;
+  margin-bottom: 10%;
+  margin-top: 20%;
+  width: 10%;
+}
+
+/* .footer {
+  background: gray;
+  color: white;
+  padding: 4em 0;
+  text-align: center;
+  color: #fff;
+  width: 620px;
+  margin: 0 auto;
+  border: 2px solid black;
+} */
+
+.social-list {
+  grid-column: 2 / -2;
+}
+
+.footer-logo,
+.footer-text,
+.footer-fineprint {
+  opacity: 0.3;
+}
+
+.footer-fineprint {
+  font-size: 0.75rem;
+  margin-top: 4em;
+}
+
+.social-list {
+  order: -1;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  color: #000;
+  font-size: 1.75rem;
+  margin: 0 0.5em;
+}
+
+.social-link:hover {
+  color: #777;
+}
+
+/* ==================
+    hero area
+===================== */
+
+.hero {
+  background-image: url(img/slider-one.jpg);
+  background-position: inherit;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(248, 239, 239);
+  padding: 4em 0;
+  color: #fff;
+  width: 100%;
+  height: 300px;
+}
+.hero1 {
+  width: 100%;
+  height: 20vh;
+  background-color: aqua;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.paragraphButton {
+  display: flex;
+}
+
+/* ==================
+    info section
+===================== */
+
+.info {
+  padding: 4em 0;
+  text-align: center;
+  /* height: 50px;
+  width: 100%; */
+}
+
+.serviceBoxContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 100px;
+}
+
+.team-image img {
+  width: 470px;
+  height: auto;
+  margin: 0px 20px;
+}
+.team {
+  width: 70%;
+}
+.team-container {
+  display: flex;
+  padding: 10px 50px;
+}
+
+.text1 {
+  background-color: black;
+  color: white;
+  width: 101%;
+  height: 300px;
+}
